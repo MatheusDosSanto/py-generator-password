@@ -6,12 +6,12 @@ class PassGen:
     def __init__(self):
         sg.theme('Black')
         layout = [
-            [sg.Text('Site/Software', size=(10,1)),
+            [sg.Text('Site/Software', size=(15,1)),
             sg.Input(key='site',size=(20,1))],
-            [sg.Text('E-mail/Usuario', size=(10,1)),
+            [sg.Text('E-mail/Usuario', size=(15,1)),
             sg.Input(key='usuario',size=(20,1))],
-            [sg.Text('Quantidade de caracteres', size=(10,1)), sg.Combo(values=list(range(30)),key='total_chars', default_value=1,size=(3,1))],
-            [sg.Output(size=(32,5))],
+            [sg.Text('Quantidade de caracteres', size=(26,1)), sg.Combo(values=list(range(30)),key='total_chars', default_value=1,size=(5,1))],
+            [sg.Output(size=(37,5))],
             [sg.Button('Gerar senha')]
         ]
         self.janela = sg.Window('Password Generator', layout)
